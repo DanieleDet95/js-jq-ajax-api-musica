@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>ex-dischi-musicali</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="logo.png" alt="logo" />
+                <div class="right">
+                  <label for="cars">Scegli genere:</label>
+                    <select id="genere" form="carform">
+                      <option value="Pop">Pop</option>
+                      <option value="Rock">Rock</option>
+                      <option value="Metal">Metal</option>
+                      <option value="Jazz">Jazz</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div class="cds-container container">
+        </div>
+
+        <script id="cd-template" type="text/x-handlebars-template">
+          <div class="cd">
+              <img src="{{ poster }}" alt="">
+              <h3>{{ title }}</h3>
+              <span class="author">{{ author }}</span>
+              <span class="year">{{ year}}</span>
+          </div>
+        </script>
+
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
