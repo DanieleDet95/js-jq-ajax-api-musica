@@ -52,10 +52,6 @@ header img {
     text-align: center;
 }
 
-.hidden {
-  display: none;
-}
-
 .cd img {
     max-width: 100%;
 }
@@ -74,4 +70,10 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+.cd.rock,
+.cd.pop,
+.cd.metal{
+  display: block;
 }
