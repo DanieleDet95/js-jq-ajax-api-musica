@@ -44,7 +44,7 @@ function stampaCd(data){
 
 // Al click del genere da filtrare
 function filtroGenere(){
-  $('select#genere option').click(function(){
+  $('select').change(function(){
 
     // Inserire il genere selezionato nella variabile
     var genereSelezionato = $(this).val();
